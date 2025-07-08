@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Web Profile</h1>
+    <nav>
+      <a href="profile.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <form action="https://formspree.io/f/mldnynpj" method="POST">
+      <fieldset>
+        <legend>We Value Your Feedback</legend>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Rate this page:</label><br>
+        <label><input type="radio" name="rating" value="1" required> 1</label>
+        <label><input type="radio" name="rating" value="2"> 2</label>
+        <label><input type="radio" name="rating" value="3"> 3</label>
+        <label><input type="radio" name="rating" value="4"> 4</label>
+        <label><input type="radio" name="rating" value="5"> 5</label><br><br>
+
+        <label for="type">Feedback Type:</label>
+        <select id="type" name="type" required>
+          <option value="">--Select--</option>
+          <option value="bug">Bug Report</option>
+          <option value="suggestion">Suggestion</option>
+          <option value="praise">Praise</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" required></textarea>
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions.
+        </label><br><br>
+
+        <input type="submit" value="Submit Feedback">
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SJC Justine Nicole Singo. All rights reserved.</p>  </footer>
+
+</body>
+</html>

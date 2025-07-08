@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Web Profile</h1>
+    <nav>
+      <a href="profile.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mldnynpj" method="POST">
+      <fieldset>
+        <legend>Get in Touch</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Send Message">
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SJC Justine Nicole Singo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
